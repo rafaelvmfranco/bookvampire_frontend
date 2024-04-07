@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "lokalise.i18n-ally",
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* general variables */
+    --accent: #13abba;
+    --black-0: #111111;
+    --black-1: #171717;
+    --black-2: #1c1c1c;
+    --black-3: #222222;
+    --black-4: #272727;
+    --black-5: #2d2d2d;
+    --black-6: #323232;
+    --black-7: #2a3742;
+    --dangerous-dark: #e30c17;
+    --dangerous-lightest: #eedddd;
+    --dangerous: #9b373c;
+    --gold: #b8860b;
+    --grey-1: #c8c8c8;
+    --grey-2: #cbcbcb;
+    --grey-3: #e7e9ec;
+    --grey-4: #d3d3d3;
+    --grey-5: #f5f5f5;
+    --grey-O: #707070;
+    --primary-0: #ff165d;
+    --primary-1: #d0c6f2;
+    --primary-2: #f5f3fd;
+    --success-lightest: #d0edd4;
+    --success: #47a455;
+    --warning-lightest: #e9d9c9;
+    --warning: #c77d33;
+    --white-0: #ffffff;
+    --white-1: #fafafa;
+    --white-2: #fcfaf6;
+
+    /* shadcn/ui */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 98.04%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 98.04%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 341.72 100% 54.31%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 98.04%;
+    --secondary-foreground: 341.72 100% 54.31%;
+    --muted: 0 0% 98.04%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 341.72 100% 54.31%;
+    --accent-foreground: 341.72 100% 54.31%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5% 64.9%;
+    --radius: 0.5rem;
+
+    /* other color variables */
+    --border-0: #d8d0d0;
+    --border-1: var(--grey-3);
+    --border-2: var(--grey-1);
+    --background-0: var(--white-0);
+    --background-1: var(--white-1);
+    --background-2: var(--white-1);
+    --background-3: var(--grey-3);
+    --background-4: #d8d0d0;
+    --background-5: var(--black-7);
+    --background-blur: rgba(0, 0, 0, 0.9);
+    --background-special-0: var(--primary-2);
+    --background-special-1: var(--primary-1);
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --icon-0: var(--white-0);
+    --icon-1: var(--grey-1);
+    --icon-2: #d8d0d0;
+    --icon-3: var(--black-0);
+    --text-0: var(--white-0);
+    --text-1: var(--grey-1);
+    --text-2: #d8d0d0;
+    --text-3: var(--black-0);
+  }
+
+  .dark {
+    /* general variables */
+    --accent: #13abba;
+    --black-0: #111111;
+    --black-1: #171717;
+    --black-2: #1c1c1c;
+    --black-3: #222222;
+    --black-4: #272727;
+    --black-5: #2d2d2d;
+    --black-6: #323232;
+    --black-7: #2a3742;
+    --dangerous-dark: #e30c17;
+    --dangerous-lightest: #eedddd;
+    --dangerous: #9b373c;
+    --gold: #b8860b;
+    --grey-O: #a8a4a4;
+    --grey-1: #c8c8c8;
+    --grey-2: #cbcbcb;
+    --grey-3: #e7e9ec;
+    --grey-4: #d3d3d3;
+    --grey-5: #f5f5f5;
+    --primary-0: #ff165d;
+    --primary-1: #d0c6f2;
+    --primary-2: #f5f3fd;
+    --success-lightest: #d0edd4;
+    --success: #47a455;
+    --warning-lightest: #e9d9c9;
+    --warning: #c77d33;
+    --white-0: #ffffff;
+    --white-1: #fafafa;
+    --white-2: #fcfaf6;
+
+    /* shadcn/ui */
+    --background: 207.5 22.22% 21.18%;
+    --foreground: 0 0% 98%;
+    --card: 206.25, 21.62%, 14.51%;
+    --card-foreground: 0 0% 98%;
+    --popover: 206.25, 21.62%, 14.51%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 341.72 100% 54.31%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 341.72 100% 54.31%;
+    --muted: 209 22% 30%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 341.72 100% 54.31%;
+    --accent-foreground: 341.72 100% 54.31%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 209 22% 30%;
+    --ring: 240 4.9% 83.9%;
+
+    /* other color variables */
+    --background-0: var(--black-7);
+    --background-1: var(--black-1);
+    --background-2: #1D262D;
+    --background-3: var(--black-3);
+    --background-4: var(--black-4);
+    --background-5: var(--black-5);
+    --background-blur: rgba(0, 0, 0, 0.9);
+    --background-opposite: var(--white-0);
+    --background-special-0: var(--black-3);
+    --background-special-1: var(--black-5);
+    --border-0: var(--grey-O);
+    --border-1: var(--grey-1);
+    --border-2: var(--grey-2);
+    --box-shadow: rgba(255, 255, 255, 0.25);
+    --icon-0: var(--black-0);
+    --icon-1: var(--grey-0);
+    --icon-2: var(--grey-1);
+    --icon-3: var(--white-0);
+    --text-0: var(--black-0);
+    --text-1: var(--grey-0);
+    --text-2: var(--grey-1);
+    --text-3: var(--white-0);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+    font-synthesis-weight: none;
+  }
+
+  main {
+    @apply mx-auto flex max-w-screen-xl flex-col;
+  }
+
+  header,
+  section {
+    @apply px-5 md:px-10;
+  }
+
+  a {
+    @apply transition-colors hover:text-primary dark:hover:text-gray-200;
+  }
+
+  div:focus {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-white dark:bg-black;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-sm border border-white bg-gray-200 dark:bg-gray-600;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+
+  .h-fill-available {
+    @apply h-[100vh] supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh];
+  }
+}

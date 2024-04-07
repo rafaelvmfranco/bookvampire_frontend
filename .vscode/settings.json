@@ -1,0 +1,30 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.unusedImports": "never",
+    "source.fixAll": "explicit"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSaveMode": "file",
+  "i18n-ally.localesPaths": [
+    "src/data/locales"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "i18n-ally.keystyle": "nested"
+}
